@@ -2,3 +2,4 @@
 *.log
 *.substvars
 debhelper-build-stamp
+/gdb-mips-linux-os161/
