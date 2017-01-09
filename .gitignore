@@ -1,4 +1,17 @@
 /packages
+/Makefile
+/serdep.tmp
+/config.log
+/config.status
+/bfd
+/etc
+/gdb
+/intl
+/libdecnumber
+/libiberty
+/opcodes
+/readline
+/sim
 *.swp
 *.swo
 *.o
