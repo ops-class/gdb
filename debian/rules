@@ -3,6 +3,8 @@
 # Uncomment this to turn on verbose mode.
 # export DH_VERBOSE=1
 
+export CFLAGS=-g -O2
+
 override_dh_update_autotools_config:
 
 override_dh_auto_configure:
