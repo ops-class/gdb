@@ -1,0 +1,19 @@
+Source: gdb-mips-linux-os161
+Section: utils
+Priority: optional
+Maintainer: Scott Haseley <shaseley@buffalo.edu>
+Build-Depends: debhelper (>= 9), libncurses5-dev, bison, flex
+Standards-Version: 3.9.7
+Homepage: http://www.eecs.harvard.edu/~dholland/os161/
+Vcs-Browser: https://github.com/ops-class/gdb
+Vcs-Git: git://github.com/ops-class/gdb.git
+
+Package: gdb-mips-linux-os161
+Architecture: i386 amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: GDB for OS/161
+ OS/161 is a teaching operating system, that is, a simplified system used for
+ teaching undergraduate operating systems classes. It is BSD-like in feel and
+ has more "reality" than most other teaching OSes; while it runs on a simulator
+ it has the structure and design of a larger system. This is a modified GDB for
+ use with OS/161.

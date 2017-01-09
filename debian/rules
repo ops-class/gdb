@@ -1,0 +1,28 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+# export DH_VERBOSE=1
+
+override_dh_update_autotools_config:
+
+override_dh_auto_configure:
+	find . -name '*.info' | xargs touch
+	touch intl/plural.c
+	./configure --target=mips-harvard-os161 --prefix=/usr
+
+override_dh_fixperms:
+	dh_fixperms
+	rm -rf $(CURDIR)/debian/gdb-mips-linux-os161/usr/share/info
+	rm -rf $(CURDIR)/debian/gdb-mips-linux-os161/usr/share/gdb
+	rm -rf $(CURDIR)/debian/gdb-mips-linux-os161/usr/share/locale
+	rm -f $(CURDIR)/debian/gdb-mips-linux-os161/usr/share/man/man1/gdbserver.1.gz
+	rm -f $(CURDIR)/debian/gdb-mips-linux-os161/usr/share/man/man1/gdb.1.gz
+	rm -rf $(CURDIR)/debian/gdb-mips-linux-os161/usr/share/man/man5/
+	cd $(CURDIR)/debian/gdb-mips-linux-os161/usr/bin/ && sh -c 'for i in mips-*; do ln -s $$i os161-`echo $$i | cut -d- -f4-`; done'
+
+override_dh_auto_test:
+
+%:
+	dh $@
+
+# vim: ts=2:sw=2:noet

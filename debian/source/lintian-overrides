@@ -1,0 +1,4 @@
+gdb-mips-linux-os161 source: license-problem-gfdl-invariants
+gdb-mips-linux-os161 source: manpage-has-errors-from-man
+gdb-mips-linux-os161 source: source-without-manpage
+gdb-mips-linux-os161 source: outdated-autotools-helper-file

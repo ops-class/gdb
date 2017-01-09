@@ -1,0 +1,4 @@
+gdb-mips-linux-os161 binary: license-problem-gfdl-invariants
+gdb-mips-linux-os161 binary: manpage-has-errors-from-man
+gdb-mips-linux-os161 binary: binary-without-manpage
+gdb-mips-linux-os161 binary: outdated-autotools-helper-file
