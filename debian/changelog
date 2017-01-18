@@ -1,3 +1,9 @@
+gdb-mips-linux-os161 (7.8~os161~2.1~trusty0) trusty; urgency=medium
+
+  * Release for trusty.
+
+ -- Geoffrey Challen <geoffrey.challen@gmail.com>  Wed, 18 Jan 2017 12:22:32 -0500
+
 gdb-mips-linux-os161 (7.8~os161~2.1~xenial0) xenial; urgency=medium
 
   * Rebooting change log and changing version number convention.
